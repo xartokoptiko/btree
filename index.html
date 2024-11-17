@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binary Tree Visualization</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    #output { margin-top: 20px; }
+    .result { margin-top: 10px; }
+    canvas { border: 1px solid #000; margin-top: 20px; }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-900">
+    <div class="flex flex-row items-center justify-between w-full px-[30px] py-[35px]">
+        <p class="text-3xl text-white w-[200px]">Hephaestus</p>
+        <p class="text-3xl font-extrabold text-white">Bianry tree Visualization</p>
+        <div class="flex flex-row w-[200px] items-center justify-end">
+            <img src="assets/hyphestusbg.png" class="w-[100px] h-[100px]" />
+        </div>
+    </div>
+  
+    <div class="flex flex-row w-full items-center justify-center">
+        <input class="w-[1000px] py-3 rounded-lg bg-white outline-none px-3" id="valueInput" />
+    </div>
+  <!-- <button id="addValue">Add Value</button> -->
+
+  <div class="flex flex-col w-full py-5 items-center justify-center">
+    <canvas class="bg-neutral-700 rounded-md" id="treeCanvas" width="1000" height="600"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
